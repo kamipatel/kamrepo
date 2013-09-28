@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="css/jqueryuiblue.custom.min.css" />
+
+
+<script>
+$(document).ready(function(){
+
+$("#dialog").hide();
+
+$( "#hellobtn" ).click(function() {
+  $( "#dialog").show().dialog();
+});
+
+});
+
+
+</script>
+
+
+</head>
+<body class="jumbotron">
+
+  <a class="btn btn-primary btn-lg" id="hellobtn">Say Hello</a>
+
+
+<div id="dialog" title="Alien Speaks">
+  <p>Hello world!</p>
+</div>
+
+</body>
+</html>
+
